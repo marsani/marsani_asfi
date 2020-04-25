@@ -1,2 +1,2 @@
 # marsani_asfi
-My Github Project
+Ini adalah Github pertamaku!!
