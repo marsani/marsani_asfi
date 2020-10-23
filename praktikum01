@@ -1,0 +1,114 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM6CqYgTWCu/IFBEhakQbxO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/marsani/marsani_asfi/blob/machine-learning/praktikum01\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lltByojHvggQ",
+        "outputId": "5730dda0-0f39-4b40-ece7-1c8124fa476c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Mounted at /content/drive\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ej8nN81qyY2j",
+        "outputId": "8d1ece66-dd66-45fb-f65a-c17f36ec0107",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "import csv\n",
+        "dataset =\"/content/drive/My Drive/Machine Learning/dataset/Persentase Perokok RI.csv\"\n",
+        "with open(dataset) as inisial_file:\n",
+        "  baca_file=csv.reader(inisial_file,'excel')\n",
+        "  for baris in baca_file:\n",
+        "    print(baris)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['Provinsi', '2015', '2016']\n",
+            "['ACEH', '29.82', '28.16']\n",
+            "['SUMATERA UTARA', '29.15', '27.88']\n",
+            "['SUMATERA BARAT', '32.41', '30.59']\n",
+            "['RIAU', '31.21', '29.61']\n",
+            "['JAMBI', '30.82', '29.18']\n",
+            "['SUMATERA SELATAN', '33.13', '31.57']\n",
+            "['BENGKULU', '33.68', '33.15']\n",
+            "['LAMPUNG', '34.12', '33.39']\n",
+            "['KEP. BANGKA BELITUNG', '30.70', '29.32']\n",
+            "['KEP. RIAU', '29.18', '29.25']\n",
+            "['DKI JAKARTA', '27.31', '26.42']\n",
+            "['JAWA BARAT', '33.82', '32.67']\n",
+            "['JAWA TENGAH', '28.57', '27.19']\n",
+            "['DI YOGYAKARTA', '24.12', '23.11']\n",
+            "['JAWA TIMUR', '29.03', '28.16']\n",
+            "['BANTEN', '32.95', '31.64']\n",
+            "['BALI', '22.96', '21.62']\n",
+            "['NUSA TENGGARA BARAT', '31.60', '30.88']\n",
+            "['NUSA TENGGARA TIMUR', '25.47', '24.91']\n",
+            "['KALIMANTAN BARAT', '29.35', '28.09']\n",
+            "['KALIMANTAN TENGAH', '30.53', '29.21']\n",
+            "['KALIMANTAN SELATAN', '25.76', '25.34']\n",
+            "['KALIMANTAN TIMUR', '25.59', '25.23']\n",
+            "['KALIMANTAN UTARA', '28.61', '28.38']\n",
+            "['SULAWESI UTARA', '29.31', '29.23']\n",
+            "['SULAWESI TENGAH', '32.56', '31.88']\n",
+            "['SULAWESI SELATAN', '25.49', '25.13']\n",
+            "['SULAWESI TENGGARA', '28.49', '27.60']\n",
+            "['GORONTALO', '33.93', '31.71']\n",
+            "['SULAWESI BARAT', '28.29', '27.36']\n",
+            "['MALUKU', '27.19', '25.68']\n",
+            "['MALUKU UTARA', '31.14', '30.23']\n",
+            "['PAPUA BARAT', '29.28', '26.18']\n",
+            "['PAPUA', '26.67', '24.04']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
